@@ -1,0 +1,12 @@
+.bloque{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+th[scope="col"]{
+    background-color:lightgray;
+}
+
+#label{
+    background-color:darkcyan;
+}

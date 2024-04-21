@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<div class="container-fluid">
+  <div class="row" id="label">
+     <div class="col-1"></div>
+     <div class="col-9">
+      <h3>TV Series</h3>
+     </div>
+     <div class="col"></div>
+  </div>
+<br>
+</div>
+<div class="bloque">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Channel</th>
+        <th scope="col">Seasons</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let s of series">
+        <th scope="row">
+          <dd>{{s.id}}</dd>
+        </th>
+        <td>
+          <dd>
+            <a href={{s.webpage}} target="_blank">{{s.name}}</a>
+          </dd>
+        </td>
+        <td>
+          <dd>{{s.channel}}</dd>
+        </td>
+        <td>
+          <dd>{{s.seasons}}</dd>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="container-fluid">
+    <p> Seasons Average: {{promedioSeries()}}</p>
+  </div>
+</div>
+
